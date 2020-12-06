@@ -1,7 +1,6 @@
 function twoComplement(bin) {
   var carry = 0,
     bin_mirror = new Array(),
-    bin_ret = new Array(),
     bin_resp = new String();
 
   var len = bin.length;
