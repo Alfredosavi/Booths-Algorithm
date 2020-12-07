@@ -2,7 +2,8 @@ let M,
   Q,
   A,
   QMO, // Q minus one
-  cycle;
+  cycle,
+  i = 0; // function Steps() switch
 
 function send() {
   let multiplicant = document.getElementById("Multiplicant").value;
