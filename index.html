@@ -13,7 +13,7 @@
     <title>Booths-Algorithm</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-sm input-group mt-1">
           <input
@@ -22,32 +22,51 @@
             id="Multiplicant"
             placeholder="Insert Multiplicant in decimal ..."
           />
+
           <input
             class="form-control"
             type="text"
             id="Multiplier"
             placeholder="Insert Multiplier in decimal ..."
           />
+
+          <button class="btn btn-primary mr-2" id="send" onclick="send()">
+            Send
+          </button>
+
+          <button class="btn btn-outline-secondary" id="steps" disabled>
+            Steps
+          </button>
+
+          <div class="mt-2 pb-3">
+            <img
+              src="/images/Flowchart_background.png"
+              alt="FlowChart"
+              srcset=""
+            />
+          </div>
         </div>
-        <div class="col-sm">
-          as dsaadasdasd asdadadadad dasaaa dasaaa dasaaa dsaadasdasd
-          asdadadadad dasaaa dasaaa dasaaa dsaadasdasd asdadadadad dasaaa dasaaa
-          dasaaa dsaadasdasd asdadadadad dasaaa dasaaa dasaaa dsaadasdasd
-          asdadadadad dasaaa dasaaa dasaaa dsaadasdasd asdadadadad dasaaa dasaaa
-          dasaaa dsaadasdasd asdadadadad dasaaa dasaaa dasaaa dsaadasdasd
-          asdadadadad dasaaa dasaaa dasaaa dsaadasdasd asdadadadad dasaaa dasaaa
-          dasaaa dasaaa dasaaa dasaaa asdadadadad dasaaa dasaaa dasaaa
-          dsaadasdasd asdadadadad dasaaa dasaaa dasaaa dsaadasdasd asdadadadad
-          dasaaa dasaaa dasaaa dsaadasdasd asdadadadad dasaaa dasaaa dasaaa
-          dsaadasdasd asdadadadad dasaaa dasaaa dasaaa dasaaa dasaaa dasaaa
+
+        <div class="border border-secundary"></div>
+
+        <div class="col-sm mt-1">
+          <table class="table table-bordered table-sm" id="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Operação</th>
+                <th scope="col">A</th>
+                <th scope="col">Q</th>
+                <th scope="col">Q<sub>-1</sub></th>
+                <th scope="col">Reason</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- <tr></tr> -->
+            </tbody>
+          </table>
         </div>
       </div>
-      <button class="btn btn-primary mr-2" id="send" onclick="send()">
-        Send
-      </button>
-      <button class="btn btn-outline-secondary" id="steps" disabled>
-        Steps
-      </button>
+      <!-- final da row /\ -->
     </div>
 
     <script
@@ -68,9 +87,9 @@
     <script type="text/javascript" src="scripts/twoComplement.js"></script>
     <script type="text/javascript" src="scripts/binaryToDecimal.js"></script>
     <script type="text/javascript" src="scripts/decimalToBinary.js"></script>
-    <script type="text/javascript" src="scripts/send.js"></script>
-    <script type="text/javascript" src="scripts/tableInsert.js"></script>
     <script type="text/javascript" src="scripts/arithmeticShift.js"></script>
+    <script type="text/javascript" src="scripts/send.js"></script>
     <script type="text/javascript" src="scripts/steps.js"></script>
+    <script type="text/javascript" src="scripts/tableInsert.js"></script>
   </body>
 </html>

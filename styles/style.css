@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+#Multiplier {
+  margin-right: 8px;
+}
+
+button {
+  padding: 50px;
+  height: 38px;
+}
