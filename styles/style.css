@@ -13,3 +13,119 @@ button {
   padding: 50px;
   height: 38px;
 }
+
+#start {
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  left: 200px;
+}
+
+#A,
+#Q,
+#QMO,
+#M,
+#count {
+  position: absolute;
+  text-align: center;
+  top: 115px;
+  left: 160px;
+}
+
+#Q {
+  top: 135px;
+}
+
+#QMO {
+  top: 155px;
+}
+
+#M {
+  top: 175px;
+}
+
+#count {
+  top: 195px;
+}
+
+#CQ,
+#CQMO {
+  position: absolute;
+  text-align: center;
+  top: 290px;
+  left: 2000px;
+}
+
+#CQ {
+  top: 285px;
+  left: 195px;
+}
+
+#CQMO {
+  top: 300px;
+  left: 190px;
+}
+
+#sub,
+#sum,
+#ASub,
+#ASum {
+  position: absolute;
+  text-align: center;
+  top: 370px;
+  left: 50px;
+}
+
+#sum {
+  left: 300px;
+}
+
+#ASub {
+  top: 400px;
+}
+
+#ASum {
+  top: 400px;
+  left: 300px;
+}
+
+#Ashift,
+#order,
+#result,
+#countR {
+  position: absolute;
+  text-align: center;
+  top: 440px;
+  left: 160px;
+  font-size: 13px;
+}
+
+#order {
+  top: 455px;
+  left: 185px;
+  font-size: medium;
+}
+
+#result {
+  top: 475px;
+  left: 175px;
+}
+
+#countR {
+  top: 500px;
+  left: 180px;
+}
+
+#counterzero {
+  position: absolute;
+  text-align: center;
+  top: 600px;
+  left: 180px;
+}
+
+#stop {
+  position: absolute;
+  text-align: center;
+  top: 600px;
+  left: 323px;
+}
