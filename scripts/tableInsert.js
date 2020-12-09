@@ -33,8 +33,8 @@ function rowUp(operation, A, number_cycle) {
 
   newCell1.appendChild(document.createTextNode(operation));
   newCell2.appendChild(document.createTextNode(A));
-  newCell3.appendChild(document.createTextNode());
-  newCell4.appendChild(document.createTextNode());
+  newCell3.appendChild(document.createTextNode(""));
+  newCell4.appendChild(document.createTextNode(""));
   newCell5.appendChild(document.createTextNode(`${number_cycle}° Cycle`));
 }
 

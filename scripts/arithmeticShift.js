@@ -21,7 +21,5 @@ function arithmeticShift(A, Q, QMO) {
   A = A.join("");
   Q = Q.join("");
 
-  console.log(A);
-  console.log(Q);
-  console.log(QMO);
+  return { A, Q, QMO };
 }
