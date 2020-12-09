@@ -2,8 +2,9 @@ let M,
   Q,
   A,
   QMO, // Q minus one
-  cycle,
-  i = 0; // function Steps() switch
+  cycle, // number of interactions
+  i = 0, // function Steps() switch
+  total = 0; // fixed number of interactions
 
 function send() {
   let multiplicant = document.getElementById("Multiplicant").value;
@@ -12,15 +13,20 @@ function send() {
   M = DecimalToBinary(parseInt(multiplicant));
   Q = DecimalToBinary(parseInt(multiplier));
 
-  A = new String();
-  count = 0;
+  cycle = Q.length;
+  total = cycle;
   QMO = "0";
 
+  A = new String();
   while (A.length !== M.toString().length) {
     A = A + "0";
   }
 
-  initializing();
+  document.getElementById(
+    "info"
+  ).innerHTML = `(${multiplicant})<sub>10</sub> = (${M})<sub>2</sub>
+  <br/>(${multiplier})<sub>10</sub> = (${Q})<sub>2</sub>
+  <br/>M = (${M})<sub>2</sub>`;
 
   document.getElementById("send").disabled = true;
   document.getElementById("steps").disabled = false;
