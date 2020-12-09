@@ -84,8 +84,10 @@ function steps() {
         i = 8;
       } else {
         // ARITHMETIC SHIFT
+        shift = true;
         i = 9;
       }
+
       break;
     }
 
@@ -142,7 +144,10 @@ function steps() {
 
       ({ A, Q, QMO } = arithmeticShift(A, Q, QMO));
 
-      console.log(A + " " + Q + " " + QMO);
+      if (shift) {
+        rowUp("none", A, total - cycle + 1);
+        shift = false;
+      }
 
       document.getElementById("result").innerHTML =
         " " + A + ", " + Q + ", " + QMO;
@@ -186,6 +191,10 @@ function steps() {
       document.getElementById("countR").style.color = normal;
       document.getElementById("counterzero").style.color = normal;
 
+      document.getElementById("send").disabled = false;
+      document.getElementById("steps").disabled = true;
+
+      i = 0;
       break;
     }
   }
