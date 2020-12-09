@@ -46,10 +46,6 @@ function sum(a, b) {
     }
   }
 
-  if (carry == "1") {
-    result[size + 1] = "1";
-  }
-
   ret = result.reverse().join("");
   return ret;
 }
