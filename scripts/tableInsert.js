@@ -5,6 +5,8 @@ function initializing() {
 
   var newRow = tbodyRef.insertRow();
 
+  newRow.setAttribute("class", "table-secondary");
+
   var newCell1 = newRow.insertCell();
   var newCell2 = newRow.insertCell();
   var newCell3 = newRow.insertCell();
@@ -25,6 +27,10 @@ function rowUp(operation, A, number_cycle) {
 
   var newRow = tbodyRef.insertRow();
 
+  if ((total - cycle + 1) % 2 === 0) {
+    newRow.setAttribute("class", "table-secondary");
+  }
+
   var newCell1 = newRow.insertCell();
   var newCell2 = newRow.insertCell();
   var newCell3 = newRow.insertCell();
@@ -44,6 +50,10 @@ function rowDown() {
     .getElementsByTagName("tbody")[0];
 
   var newRow = tbodyRef.insertRow();
+
+  if ((total - cycle + 1) % 2 === 0) {
+    newRow.setAttribute("class", "table-secondary");
+  }
 
   var newCell1 = newRow.insertCell();
   var newCell2 = newRow.insertCell();
