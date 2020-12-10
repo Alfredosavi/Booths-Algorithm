@@ -3,6 +3,11 @@
   padding: 0;
   outline: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
 }
 
 #Multiplier {
@@ -24,8 +29,10 @@ button {
 #start {
   position: absolute;
   text-align: center;
-  top: 50px;
-  left: 200px;
+  top: 51px;
+  left: 190px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 #A,
@@ -37,22 +44,23 @@ button {
   text-align: center;
   top: 115px;
   left: 160px;
+  font-weight: bold;
 }
 
 #Q {
-  top: 135px;
+  top: 136px;
 }
 
 #QMO {
-  top: 155px;
+  top: 157px;
 }
 
 #M {
-  top: 175px;
+  top: 178px;
 }
 
 #count {
-  top: 195px;
+  top: 199px;
 }
 
 #CQ,
@@ -61,15 +69,16 @@ button {
   text-align: center;
   top: 290px;
   left: 2000px;
+  font-weight: bold;
 }
 
 #CQ {
-  top: 285px;
+  top: 286px;
   left: 195px;
 }
 
 #CQMO {
-  top: 300px;
+  top: 302px;
   left: 190px;
 }
 
@@ -79,20 +88,21 @@ button {
 #ASum {
   position: absolute;
   text-align: center;
-  top: 370px;
-  left: 50px;
+  top: 368px;
+  left: 51px;
+  font-weight: bold;
 }
 
 #sum {
-  left: 300px;
+  left: 301px;
 }
 
 #ASub {
-  top: 400px;
+  top: 395px;
 }
 
 #ASum {
-  top: 400px;
+  top: 395px;
   left: 300px;
 }
 
@@ -103,36 +113,45 @@ button {
   position: absolute;
   text-align: center;
   top: 440px;
-  left: 160px;
-  font-size: 13px;
+  left: 167px;
+
+  font-weight: bold;
+  line-height: 1;
 }
 
 #order {
-  top: 455px;
-  left: 185px;
-  font-size: medium;
+  top: 474px;
+  left: 191px;
+  font-weight: normal;
+  font-size: small;
 }
 
 #result {
-  top: 475px;
-  left: 175px;
+  top: 490px;
+  left: 160px;
+  font-size: 0.9rem;
 }
 
 #countR {
-  top: 500px;
-  left: 180px;
+  top: 510px;
+  /* left: 180px; */
+  left: 165px;
 }
 
 #counterzero {
   position: absolute;
   text-align: center;
-  top: 600px;
+  top: 601px;
   left: 180px;
+
+  font-weight: bold;
 }
 
 #stop {
   position: absolute;
   text-align: center;
-  top: 600px;
-  left: 323px;
+  top: 601px;
+  left: 320px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
