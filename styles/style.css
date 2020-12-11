@@ -28,10 +28,18 @@ span {
 }
 
 #info {
+  font-family: "Fira Code";
+
+  display: none;
   position: absolute;
-  text-align: center;
-  top: 120px;
-  left: 320px;
+  text-align: justify;
+  top: 110px;
+  left: 290px;
+
+  background-color: #dfdddc;
+  padding: 20px;
+
+  border-radius: 10px;
 }
 
 #start {

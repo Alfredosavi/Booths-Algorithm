@@ -1,5 +1,6 @@
 function tableReset() {
   document.getElementById("info").innerHTML = "";
+  document.getElementById("info").style.display = "none";
 
   table = document.getElementById("tbody");
   table.innerHTML = "";
