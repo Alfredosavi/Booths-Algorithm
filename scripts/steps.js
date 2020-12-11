@@ -194,6 +194,8 @@ function steps() {
       document.getElementById("send").disabled = false;
       document.getElementById("steps").disabled = true;
 
+      answer();
+
       break;
     }
   }

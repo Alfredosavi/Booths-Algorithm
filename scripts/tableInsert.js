@@ -74,6 +74,22 @@ function rowDown() {
   newCell5.appendChild(document.createTextNode(""));
 }
 
+function answer() {
+  const response = BinaryToDecimal(A + Q);
+
+  var tbodyRef = document
+    .getElementById("table")
+    .getElementsByTagName("tbody")[0];
+
+  var newRow = tbodyRef.insertRow();
+  var newCell1 = newRow.insertCell();
+
+  newCell1.setAttribute("class", "table-danger");
+  newCell1.setAttribute("colspan", "5");
+  newCell1.innerHTML = `Result: A = ${A} Q = ${Q} | (${A}${Q})<sub>2</sub> = (${response})<sub>10</sub>`;
+  // newCell1.appendChild(document.createTextNode());
+}
+
 function SpanBitQ(newCell3) {
   let teste = Q.split("");
 
