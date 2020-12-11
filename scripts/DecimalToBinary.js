@@ -1,4 +1,4 @@
-function DecimalToBinary(decimal) {
+function decimalToBinary(decimal) {
   var binary_resp = new String();
   var binary_respTwoComp = new String();
   var isNegative = new Boolean(false);

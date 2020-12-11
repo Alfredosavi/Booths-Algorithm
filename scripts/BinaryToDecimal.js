@@ -1,4 +1,4 @@
-function BinaryToDecimal(bin) {
+function binaryToDecimal(bin) {
   var decimal_resp = 0;
   var isNegative = new Boolean(false);
 

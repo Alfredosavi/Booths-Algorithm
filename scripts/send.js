@@ -14,8 +14,8 @@ function send() {
   let multiplicant = document.getElementById("Multiplicant").value;
   let multiplier = document.getElementById("Multiplier").value;
 
-  M = DecimalToBinary(parseInt(multiplicant));
-  Q = DecimalToBinary(parseInt(multiplier));
+  M = decimalToBinary(parseInt(multiplicant));
+  Q = decimalToBinary(parseInt(multiplier));
 
   cycle = Q.length;
   total = cycle;
