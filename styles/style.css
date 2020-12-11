@@ -3,10 +3,10 @@
   padding: 0;
   outline: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   background-color: #f2f2f2;
 }
 
@@ -17,6 +17,14 @@ body {
 button {
   padding: 50px;
   height: 38px;
+}
+
+table {
+  font-family: "Fira Code", monospace;
+}
+
+span {
+  color: red;
 }
 
 #info {

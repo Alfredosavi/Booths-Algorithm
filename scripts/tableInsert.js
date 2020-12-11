@@ -13,9 +13,12 @@ function initializing() {
   var newCell4 = newRow.insertCell();
   var newCell5 = newRow.insertCell();
 
+  newCell4.style.color = "#F00";
+  SpanBitQ(newCell3);
+
   newCell1.appendChild(document.createTextNode(""));
   newCell2.appendChild(document.createTextNode(A));
-  newCell3.appendChild(document.createTextNode(Q));
+  // newCell3.appendChild(document.createTextNode(Q));
   newCell4.appendChild(document.createTextNode(QMO));
   newCell5.appendChild(document.createTextNode("Initial values"));
 }
@@ -61,9 +64,21 @@ function rowDown() {
   var newCell4 = newRow.insertCell();
   var newCell5 = newRow.insertCell();
 
+  newCell4.style.color = "#F00";
+  SpanBitQ(newCell3);
+
   newCell1.appendChild(document.createTextNode("Arithmetic Shift -->"));
   newCell2.appendChild(document.createTextNode(A));
-  newCell3.appendChild(document.createTextNode(Q));
+  // newCell3.appendChild(document.createTextNode(Q));
   newCell4.appendChild(document.createTextNode(QMO));
   newCell5.appendChild(document.createTextNode(""));
+}
+
+function SpanBitQ(newCell3) {
+  let teste = Q.split("");
+
+  teste[teste.length - 1] = `<span>${teste[teste.length - 1]}</span>`;
+  teste = teste.join("");
+
+  newCell3.innerHTML = teste;
 }
