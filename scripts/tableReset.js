@@ -23,5 +23,8 @@ function tableReset() {
 
   document.getElementById("stop").style.color = normal;
 
+  document.getElementById("send").disabled = false;
+  document.getElementById("steps").disabled = true;
+
   i = 0;
 }

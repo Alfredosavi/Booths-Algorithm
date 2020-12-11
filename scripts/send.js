@@ -31,8 +31,8 @@ function send() {
   ).innerHTML += `(${multiplicant})<sub>10</sub> = (${M})<sub>2</sub>
   <br/>(${multiplier})<sub>10</sub> = (${Q})<sub>2</sub>
   <br/>M = (${M})<sub>2</sub>`;
-  document.getElementById("info").style.display = "block";
 
+  document.getElementById("info").style.display = "block";
   document.getElementById("send").disabled = true;
   document.getElementById("steps").disabled = false;
 }

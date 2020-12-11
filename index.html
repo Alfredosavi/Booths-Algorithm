@@ -23,7 +23,7 @@
     <title>Booths-Algorithm</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-sm input-group mt-1">
           <input
@@ -34,13 +34,13 @@
           />
 
           <input
-            class="form-control"
+            class="form-control mr-0"
             type="text"
             id="Multiplier"
             placeholder="Insert Multiplier in decimal ..."
           />
 
-          <button class="btn btn-primary mr-2" id="send" onclick="send()">
+          <button class="btn btn-primary" id="send" onclick="send()">
             Send
           </button>
 
@@ -51,6 +51,14 @@
             disabled
           >
             Steps
+          </button>
+
+          <button
+            class="btn btn-outline-danger"
+            id="reset"
+            onclick="tableReset()"
+          >
+            Reset
           </button>
 
           <div class="mt-2 pb-3">
@@ -100,7 +108,7 @@
           </div>
         </div>
 
-        <div class="border border-secundary"></div>
+        <div id="spacer" class="border border-secundary"></div>
 
         <div class="col-sm mt-1">
           <table

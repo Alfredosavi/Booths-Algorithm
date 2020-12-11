@@ -10,13 +10,21 @@ body {
   background-color: #f2f2f2;
 }
 
-#Multiplier {
-  margin-right: 8px;
-}
-
 button {
   padding: 50px;
   height: 38px;
+}
+
+#send {
+  margin: 0 5px;
+}
+
+#Multiplier {
+  margin-right: 5px;
+}
+
+#reset {
+  margin-left: 5px;
 }
 
 table {
@@ -25,6 +33,13 @@ table {
 
 span {
   color: red;
+}
+
+img {
+  position: absolute;
+  top: 45px;
+  left: 15px;
+  z-index: -1;
 }
 
 #info {
