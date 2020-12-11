@@ -163,3 +163,44 @@ span {
   font-weight: bold;
   text-transform: uppercase;
 }
+
+#decSub,
+#decSum,
+#decArith,
+#no,
+#yes {
+  position: absolute;
+  text-align: center;
+
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1;
+
+  top: 280px;
+  left: 120px;
+}
+
+/* #decSub {
+  top: 280px;
+  left: 120px;
+} */
+
+#decSum {
+  top: 280px;
+  left: 280px;
+}
+
+#decArith {
+  top: 370px;
+  left: 220px;
+}
+
+#no {
+  top: 595px;
+  left: 140px;
+}
+
+#yes {
+  top: 595px;
+  left: 265px;
+}

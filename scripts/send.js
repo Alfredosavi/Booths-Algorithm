@@ -7,6 +7,10 @@ let M,
   total = 0, // fixed number of interactions
   shift = false;
 function send() {
+  if (i !== 0) {
+    tableReset();
+  }
+
   let multiplicant = document.getElementById("Multiplicant").value;
   let multiplier = document.getElementById("Multiplier").value;
 
