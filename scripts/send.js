@@ -6,6 +6,7 @@ let M,
   i = 0, // function Steps() switch
   total = 0, // fixed number of interactions
   shift = false;
+
 function send() {
   if (i !== 0) {
     tableReset();
@@ -16,6 +17,11 @@ function send() {
 
   M = decimalToBinary(parseInt(multiplicant));
   Q = decimalToBinary(parseInt(multiplier));
+
+  if (isNaN(Q) || isNaN(M)) {
+    alert("Input inválido");
+    return;
+  }
 
   cycle = Q.length;
   total = cycle;
