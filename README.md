@@ -1,6 +1,6 @@
 # Booths-Algorithm
 
-<p align="center">O `algoritmo de booth` é um algoritmo de **multiplicação** que permite multiplicar dois inteiros binários com sinal em **complemento de 2**.</p>
+O `algoritmo de booth` é um algoritmo de **multiplicação** que permite multiplicar dois inteiros binários com sinal em **complemento de 2**.
 
 <p align="center">
 <img src="https://media.giphy.com/media/jreTYj0mBoa92xDPZC/giphy.gif" />
