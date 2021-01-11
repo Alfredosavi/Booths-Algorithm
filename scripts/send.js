@@ -16,17 +16,24 @@ function send() {
   let multiplier = document.getElementById("Multiplier").value;
   let input_type = document.getElementById("inlineFormCustomSelectPref").value;
 
+  if (multiplicant === "" || multiplier === "") {
+    alert("Input inválido");
+    return;
+  }
+
   if (input_type === "DEC") {
     M = decimalToBinary(parseInt(multiplicant));
     Q = decimalToBinary(parseInt(multiplier));
-
-    if (isNaN(Q) || isNaN(M)) {
-      alert("Input inválido");
-      return;
-    }
   } else {
     M = multiplicant;
     Q = multiplier;
+
+    console.log(CheckInputBIN(M));
+
+    if (CheckInputBIN(M) !== undefined || CheckInputBIN(Q) !== undefined) {
+      alert("Input inválido");
+      return;
+    }
   }
 
   cycle = Q.length;
@@ -44,8 +51,8 @@ function send() {
     <br/>(${multiplier})<sub>10</sub> = (${Q})<sub>2</sub>
     <br/>M = (${M})<sub>2</sub>`;
   } else {
-    M_dec = binaryToDecimal(parseInt(multiplicant));
-    Q_dec = binaryToDecimal(parseInt(multiplier));
+    M_dec = binaryToDecimal(multiplicant);
+    Q_dec = binaryToDecimal(multiplier);
 
     document.getElementById("info").innerHTML += `
     (${M})<sub>2</sub> = (${M_dec})<sub>10</sub><br/>
