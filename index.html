@@ -28,17 +28,26 @@
         <div class="col-sm input-group mt-1">
           <input
             class="form-control"
-            type="text"
+            type="number"
             id="Multiplicant"
-            placeholder="Insert Multiplicant in decimal ..."
+            placeholder="Insert Multiplicant ..."
           />
 
           <input
             class="form-control mr-0"
-            type="text"
+            type="number"
             id="Multiplier"
-            placeholder="Insert Multiplier in decimal ..."
+            placeholder="Insert Multiplier ..."
           />
+
+          <!-- <label class="my-1 mr-2" for="inlineFormCustomSelectPref"
+            >Input</label
+          > -->
+
+          <select class="custom-select" id="inlineFormCustomSelectPref">
+            <option value="DEC" selected>Decimal</option>
+            <option value="BIN">Binary</option>
+          </select>
 
           <button class="btn btn-primary" id="send" onclick="send()">
             Send
@@ -155,5 +164,6 @@
     <script type="text/javascript" src="scripts/steps.js"></script>
     <script type="text/javascript" src="scripts/tableInsert.js"></script>
     <script type="text/javascript" src="scripts/tableReset.js"></script>
+    <script type="text/javascript" src="utils/CheckInputBIN.js"></script>
   </body>
 </html>

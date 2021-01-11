@@ -15,6 +15,10 @@ button {
   height: 38px;
 }
 
+#inlineFormCustomSelectPref {
+  max-width: 98px;
+}
+
 #send {
   margin: 0 5px;
 }
@@ -29,6 +33,11 @@ button {
 
 table {
   font-family: "Fira Code", monospace;
+}
+
+.table-hover tbody tr:hover td,
+.table-hover .table-secondary:hover > td {
+  background-color: rgb(123, 123, 141);
 }
 
 span {
