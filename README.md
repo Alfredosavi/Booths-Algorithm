@@ -9,7 +9,7 @@ O `algoritmo de booth` é um algoritmo de **multiplicação** que permite multip
 
 ## 🔥 Como usar?
   OBS: O algoritmo está disponível para o uso no [Git pages](https://alfredosavi.github.io/Booths-Algorithm/).
-  1. Insira nos campos de `inputs` os valores em **decimal**, em seguida clique no botão `Send`;
+  1. Insira nos campos de `inputs` os valores e em seguida informe se são valores em **decimal** ou **binário, em seguida clique no botão `Send`;
   2. Clique no botão `Steps` para ver passo a passo o **flowchart** do Algoritmo e a **tabela**;
   3. Use o botão `Reset` para **limpar** o flowchart e a tabela.
 
