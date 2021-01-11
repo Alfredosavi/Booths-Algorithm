@@ -15,6 +15,10 @@ button {
   height: 38px;
 }
 
+#inlineFormCustomSelectPref {
+  max-width: 98px;
+}
+
 #send {
   margin: 0 5px;
 }

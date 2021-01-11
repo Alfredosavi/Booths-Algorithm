@@ -30,15 +30,24 @@
             class="form-control"
             type="text"
             id="Multiplicant"
-            placeholder="Insert Multiplicant in decimal ..."
+            placeholder="Insert Multiplicant ..."
           />
 
           <input
             class="form-control mr-0"
             type="text"
             id="Multiplier"
-            placeholder="Insert Multiplier in decimal ..."
+            placeholder="Insert Multiplier ..."
           />
+
+          <!-- <label class="my-1 mr-2" for="inlineFormCustomSelectPref"
+            >Input</label
+          > -->
+
+          <select class="custom-select" id="inlineFormCustomSelectPref">
+            <option value="DEC" selected>Decimal</option>
+            <option value="BIN" disabled>Binary</option>
+          </select>
 
           <button class="btn btn-primary" id="send" onclick="send()">
             Send
