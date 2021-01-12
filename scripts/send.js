@@ -28,8 +28,6 @@ function send() {
     M = multiplicant;
     Q = multiplier;
 
-    console.log(CheckInputBIN(M));
-
     if (CheckInputBIN(M) !== undefined || CheckInputBIN(Q) !== undefined) {
       alert("Input inválido");
       return;
